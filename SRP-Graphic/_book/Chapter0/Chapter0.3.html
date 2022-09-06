@@ -1,0 +1,541 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>0.3 其他的配置 · UnitySRP学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="LuZiShen">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Chapter0.2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前   言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Chapter0.html">
+            
+                <a href="Chapter0.html">
+            
+                    
+                    第 0 章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Chapter0.1.html">
+            
+                <a href="Chapter0.1.html">
+            
+                    
+                    0.1 环境的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Chapter0.2.html">
+            
+                <a href="Chapter0.2.html">
+            
+                    
+                    0.2 VSCode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="Chapter0.3.html">
+            
+                <a href="Chapter0.3.html">
+            
+                    
+                    0.3 其他的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >0.3 其他的配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;-0-&#x7AE0;---srp&#x73AF;&#x5883;&#x914D;&#x7F6E;">&#x7B2C; 0 &#x7AE0;   SRP&#x73AF;&#x5883;&#x914D;&#x7F6E;</h1>
+<h3 id="3&#x5176;&#x4ED6;&#x7684;&#x914D;&#x7F6E;">3.&#x5176;&#x4ED6;&#x7684;&#x914D;&#x7F6E;</h3>
+<p>shader&#x7684;&#x8BED;&#x8A00;&#x4E3B;&#x8981;&#x662F;hlsl&#xFF0C;&#x800C;shader&#x751F;&#x6210;&#x7684;&#x9ED8;&#x8BA4;&#x6A21;&#x677F;&#x4E3A;cg&#x8BED;&#x8A00;&#x7684;&#xFF0C;&#x6CA1;&#x6709;&#x751F;&#x6210;cg&#x7684;shader&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x751F;&#x6210;hlsl&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x56E0;&#x6B64;
+&#x914D;&#x4E86;&#x4E00;&#x4E9B;&#x811A;&#x672C;&#x80FD;&#x751F;&#x4EA7;hlsl&#x7684;&#x6A21;&#x677F;shader&#xFF0C;&#x548C;&#x751F;&#x6210;hlsl&#x7684;&#x6587;&#x4EF6;</p>
+<p>&#x751F;&#x6210;shader&#x548C;hlsl&#x7684;&#x811A;&#x672C;</p>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>IO</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Text<span class="token punctuation">.</span>RegularExpressions</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">UnityEditor<span class="token punctuation">.</span>ProjectWindowCallback</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">UnityEngine</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">UnityEditor</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CustomShaderGenerator</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token class-name"><span class="token keyword">string</span></span> k_CustomShaderPath <span class="token operator">=</span> <span class="token string">&quot;Assets/Scripts/Utils/CustomShader.Shader.txt&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token class-name"><span class="token keyword">string</span></span> k_CustomHlslPath <span class="token operator">=</span> <span class="token string">&quot;Assets/Scripts/Utils/CustomHlsl.hlsl.txt&quot;</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">MenuItem</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token string">&quot;Assets/Create/Shader/Custom Shader&quot;</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">GenerateShader</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name"><span class="token keyword">var</span></span> targetObj <span class="token operator">=</span> Selection<span class="token punctuation">.</span>objects<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token class-name"><span class="token keyword">string</span></span> targetPath <span class="token operator">=</span> AssetDatabase<span class="token punctuation">.</span><span class="token function">GetAssetPath</span><span class="token punctuation">(</span>targetObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>File<span class="token punctuation">.</span><span class="token function">Exists</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            targetPath <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">GetDirectoryName</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+
+        ProjectWindowUtil<span class="token punctuation">.</span><span class="token function">StartNameEditingIfProjectWindowExists</span><span class="token punctuation">(</span>
+            <span class="token number">0</span><span class="token punctuation">,</span>
+            ScriptableObject<span class="token punctuation">.</span><span class="token generic-method"><span class="token function">CreateInstance</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>CreateScriptAsset<span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            targetPath <span class="token operator">+</span> <span class="token string">&quot;/CustomShader.Shader&quot;</span><span class="token punctuation">,</span>
+            <span class="token keyword">null</span><span class="token punctuation">,</span>
+            k_CustomShaderPath
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">MenuItem</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token string">&quot;Assets/Create/Shader/Custom hlsl&quot;</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">GenerateHLSL</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name"><span class="token keyword">var</span></span> targetObj <span class="token operator">=</span> Selection<span class="token punctuation">.</span>objects<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token class-name"><span class="token keyword">string</span></span> targetPath <span class="token operator">=</span> AssetDatabase<span class="token punctuation">.</span><span class="token function">GetAssetPath</span><span class="token punctuation">(</span>targetObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>File<span class="token punctuation">.</span><span class="token function">Exists</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            targetPath <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">GetDirectoryName</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+
+        ProjectWindowUtil<span class="token punctuation">.</span><span class="token function">StartNameEditingIfProjectWindowExists</span><span class="token punctuation">(</span>
+            <span class="token number">0</span><span class="token punctuation">,</span>
+            ScriptableObject<span class="token punctuation">.</span><span class="token generic-method"><span class="token function">CreateInstance</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>CreateScriptAsset<span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            targetPath <span class="token operator">+</span> <span class="token string">&quot;/CustomHlsl.hlsl&quot;</span><span class="token punctuation">,</span>
+            <span class="token keyword">null</span><span class="token punctuation">,</span>
+            k_CustomHlslPath
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">CreateScriptAsset</span> <span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">EndNameEditAction</span></span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">override</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Action</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> instanceId<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> pathName<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> resourceFile<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name">UnityEngine<span class="token punctuation">.</span>Object</span> obj <span class="token operator">=</span> <span class="token function">CreateTemplateScriptAsset</span><span class="token punctuation">(</span>pathName<span class="token punctuation">,</span>resourceFile<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ProjectWindowUtil<span class="token punctuation">.</span><span class="token function">ShowCreatedAsset</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token return-type class-name">UnityEngine<span class="token punctuation">.</span>Object</span> <span class="token function">CreateTemplateScriptAsset</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> newScriptPath<span class="token punctuation">,</span><span class="token class-name"><span class="token keyword">string</span></span> targetPath<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name"><span class="token keyword">string</span></span> fullPath <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">GetFullPath</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name"><span class="token keyword">string</span></span> fileNameWithoutExtension <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">GetFileNameWithoutExtension</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name"><span class="token keyword">string</span></span> item <span class="token operator">=</span> <span class="token string">&quot;#CustomShader#&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">.</span><span class="token function">Contains</span><span class="token punctuation">(</span><span class="token string">&quot;hlsl&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            item <span class="token operator">=</span> <span class="token string">&quot;#HLSL#&quot;</span><span class="token punctuation">;</span>
+            fileNameWithoutExtension <span class="token operator">=</span> fileNameWithoutExtension<span class="token punctuation">.</span><span class="token function">ToUpper</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">StreamWriter</span> sw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">StreamWriter</span><span class="token punctuation">(</span>fullPath<span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">,</span>System<span class="token punctuation">.</span>Text<span class="token punctuation">.</span>Encoding<span class="token punctuation">.</span>UTF8<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">StreamReader</span> sr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">StreamReader</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token class-name"><span class="token keyword">string</span></span> str <span class="token operator">=</span> sr<span class="token punctuation">.</span><span class="token function">ReadToEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                str <span class="token operator">=</span> Regex<span class="token punctuation">.</span><span class="token function">Replace</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span>item<span class="token punctuation">,</span>fileNameWithoutExtension<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sw<span class="token punctuation">.</span><span class="token function">Write</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sw<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                sr<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                AssetDatabase<span class="token punctuation">.</span><span class="token function">Refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                AssetDatabase<span class="token punctuation">.</span><span class="token function">ImportAsset</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> AssetDatabase<span class="token punctuation">.</span><span class="token function">LoadAssetAtPath</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">,</span><span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token type-expression class-name">UnityEngine<span class="token punctuation">.</span>Object</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>shader&#x7684;&#x6A21;&#x677F;&#x6587;&#x4EF6; CustomShader.Shader.txt</p>
+<pre class="language-"><code class="lang-glsl">Shader <span class="token string">&quot;CustomShader/#CustomShader#&quot;</span>
+<span class="token punctuation">{</span>
+    Properties
+    <span class="token punctuation">{</span>
+        <span class="token function">_BaseMap</span><span class="token punctuation">(</span><span class="token string">&quot;MainTex&quot;</span><span class="token punctuation">,</span> <span class="token number">2</span>D<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token string">&quot;White&quot;</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+        <span class="token function">_BaseColor</span><span class="token punctuation">(</span><span class="token string">&quot;BaseColor&quot;</span><span class="token punctuation">,</span> Color<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    SubShader
+    <span class="token punctuation">{</span>
+        Tags
+        <span class="token punctuation">{</span>
+            <span class="token string">&quot;RanderPipline&quot;</span> <span class="token operator">=</span> <span class="token string">&quot;UniversalPipeline&quot;</span>
+            <span class="token string">&quot;RanderType&quot;</span> <span class="token operator">=</span> <span class="token string">&quot;Opaque&quot;</span>
+        <span class="token punctuation">}</span>
+
+        HLSLINCLUDE
+
+            <span class="token comment">// &#x5F15;&#x5165;Core.hlsl&#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x66FF;&#x6362;UnityCG&#x4E2D;&#x7684;cginc</span>
+            <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&quot;Assets/Scripts/CustomPipeline/ShaderLibrary/Custom.hlsl&quot;</span></span>
+
+            <span class="token comment">// &#x5C06;&#x4E0D;&#x5360;&#x7A7A;&#x95F4;&#x7684;&#x6750;&#x8D28;&#x76F8;&#x5173;&#x53D8;&#x91CF;&#x653E;&#x5728;CBUFFER&#x4E2D;&#xFF0C;&#x4E3A;&#x4E86;&#x517C;&#x5BB9;SRP Batcher</span>
+            <span class="token function">CBUFFER_START</span><span class="token punctuation">(</span>UnityPerMaterial<span class="token punctuation">)</span>
+                float4 _BaseMap_ST<span class="token punctuation">;</span>
+                half4 _BaseColor<span class="token punctuation">;</span>
+            CBUFFER_END
+
+            <span class="token comment">// &#x6750;&#x8D28;&#x5355;&#x72EC;&#x58F0;&#x660E;&#xFF0C;&#x4F7F;&#x7528;DX11&#x98CE;&#x683C;&#x7684;&#x65B0;&#x91C7;&#x6837;&#x65B9;&#x6CD5;</span>
+            <span class="token function">TEXTURE2D</span> <span class="token punctuation">(</span>_BaseMap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">SAMPLER</span><span class="token punctuation">(</span>sampler_BaseMap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">struct</span> <span class="token class-name">a2v</span>
+            <span class="token punctuation">{</span>
+                float4 positionOS <span class="token operator">:</span> POSITION<span class="token punctuation">;</span>
+                float2 uv         <span class="token operator">:</span> TEXCOORD0<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">struct</span> <span class="token class-name">v2f</span>
+            <span class="token punctuation">{</span>
+                float4 positionCS <span class="token operator">:</span> SV_POSITION<span class="token punctuation">;</span>
+                float2 uv         <span class="token operator">:</span> TEXCOORD0<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        ENDHLSL
+
+        Pass
+        <span class="token punctuation">{</span>
+            <span class="token comment">// &#x58F0;&#x660E;Pass&#x540D;&#x79F0;&#xFF0C;&#x65B9;&#x4FBF;&#x8C03;&#x7528;&#x4E0E;&#x8BC6;&#x522B;</span>
+            Name <span class="token string">&quot;CustomPipeline&quot;</span>
+            Tags <span class="token punctuation">{</span><span class="token string">&quot;LightMode&quot;</span> <span class="token operator">=</span> <span class="token string">&quot;CustomPipeline&quot;</span><span class="token punctuation">}</span>
+
+            HLSLPROGRAM
+
+                <span class="token comment">// &#x58F0;&#x660E;&#x9876;&#x70B9;/&#x7247;&#x6BB5;&#x7740;&#x8272;&#x5668;&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;</span>
+                <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">pragma</span> <span class="token expression">vertex vert</span></span>
+                <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">pragma</span> <span class="token expression">fragment frag</span></span>
+
+                <span class="token comment">// &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;</span>
+                v2f <span class="token function">vert</span><span class="token punctuation">(</span>a2v i<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    v2f o<span class="token punctuation">;</span>
+                    o<span class="token punctuation">.</span>positionCS <span class="token operator">=</span> <span class="token function">TransformObjectToHClip</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span>positionOS<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    o<span class="token punctuation">.</span>uv <span class="token operator">=</span> <span class="token function">TRANSFORM_TEX</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span>uv<span class="token punctuation">,</span> _BaseMap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">return</span> o<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+                <span class="token comment">// &#x7247;&#x6BB5;&#x7740;&#x8272;&#x5668;</span>
+                half4 <span class="token function">frag</span><span class="token punctuation">(</span>v2f i<span class="token punctuation">)</span> <span class="token operator">:</span> SV_Target
+                <span class="token punctuation">{</span>
+                    half4 color <span class="token operator">=</span> <span class="token function">SAMPLE_TEXTURE2D</span><span class="token punctuation">(</span>_BaseMap<span class="token punctuation">,</span> sampler_BaseMap<span class="token punctuation">,</span> i<span class="token punctuation">.</span>uv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">return</span>  color <span class="token operator">*</span> _BaseColor<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+            ENDHLSL
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>hlsl&#x7684;&#x6A21;&#x677F;&#x6587;&#x4EF6; CustomHlsl.hlsl.txt</p>
+<pre class="language-"><code class="lang-glsl"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">ifndef</span> <span class="token expression">CUSTOM_#HLSL#_INCLUDE</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">CUSTOM_</span><span class="token directive-hash">#</span><span class="token expression">HLSL#_INCLUDE</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span>
+</code></pre>
+<p>&#x7528;&#x524D;&#x9762;&#x7684;&#x811A;&#x672C;&#x4EE5;&#x540E;&#x9762;&#x7684;&#x4FE9;&#x4E2A;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#xFF0C;&#x5206;&#x522B;&#x751F;&#x6210;shader&#x548C;hlsl&#x6587;&#x4EF6;
+&#x70B9;&#x51FB;&#x53F3;&#x952E;Create -&gt; Shader -&gt; Custom Shader(Custom hlsl)&#x5373;&#x53EF;&#x751F;&#x6210;shader&#x548C;hlsl&#x6587;&#x4EF6;</p>
+<h5 id="31cs&#x811A;&#x672C;&#x4EE3;&#x7801;&#x89E3;&#x6790;">3.1.cs&#x811A;&#x672C;&#x4EE3;&#x7801;&#x89E3;&#x6790;</h5>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">const</span> <span class="token class-name"><span class="token keyword">string</span></span> k_CustomShaderPath <span class="token operator">=</span> <span class="token string">&quot;Assets/Scripts/Utils/CustomShader.Shader.txt&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token class-name"><span class="token keyword">string</span></span> k_CustomHlslPath <span class="token operator">=</span> <span class="token string">&quot;Assets/Scripts/Utils/CustomHlsl.hlsl.txt&quot;</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;
+<img src="Image/templatePath.png" alt="&#x5982;&#x56FE;&#x6240;&#x793A;"></p>
+<pre class="language-"><code class="lang-cs"><span class="token class-name"><span class="token keyword">var</span></span> targetObj <span class="token operator">=</span> Selection<span class="token punctuation">.</span>objects<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token class-name"><span class="token keyword">string</span></span> targetPath <span class="token operator">=</span> AssetDatabase<span class="token punctuation">.</span><span class="token function">GetAssetPath</span><span class="token punctuation">(</span>targetObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span><span class="token punctuation">(</span>File<span class="token punctuation">.</span><span class="token function">Exists</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    targetPath <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">GetDirectoryName</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x70B9;&#x51FB;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5982;&#x679C;&#x70B9;&#x51FB;&#x7684;&#x662F;&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x7684;&#x8DEF;&#x5F84;</p>
+<pre class="language-"><code class="lang-cs">ProjectWindowUtil<span class="token punctuation">.</span><span class="token function">StartNameEditingIfProjectWindowExists</span><span class="token punctuation">(</span>
+    <span class="token number">0</span><span class="token punctuation">,</span>
+    ScriptableObject<span class="token punctuation">.</span><span class="token generic-method"><span class="token function">CreateInstance</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>CreateScriptAsset<span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    targetPath <span class="token operator">+</span> <span class="token string">&quot;/CustomHlsl.hlsl&quot;</span><span class="token punctuation">,</span>
+    <span class="token keyword">null</span><span class="token punctuation">,</span>
+    k_CustomHlslPath
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x751F;&#x6210;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x65F6;&#x80FD;&#x591F;&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x540D;
+<img src="Image/renameBefore.png" alt="&#x5982;&#x56FE;&#x6240;&#x793A;"> <img src="Image/renameAfter.png" alt="&#x5982;&#x56FE;&#x6240;&#x793A;"></p>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> <span class="token return-type class-name">UnityEngine<span class="token punctuation">.</span>Object</span> <span class="token function">CreateTemplateScriptAsset</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> newScriptPath<span class="token punctuation">,</span><span class="token class-name"><span class="token keyword">string</span></span> targetPath<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token class-name"><span class="token keyword">string</span></span> fullPath <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">GetFullPath</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name"><span class="token keyword">string</span></span> fileNameWithoutExtension <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">GetFileNameWithoutExtension</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name"><span class="token keyword">string</span></span> item <span class="token operator">=</span> <span class="token string">&quot;#CustomShader#&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">.</span><span class="token function">Contains</span><span class="token punctuation">(</span><span class="token string">&quot;hlsl&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        item <span class="token operator">=</span> <span class="token string">&quot;#HLSL#&quot;</span><span class="token punctuation">;</span>
+        fileNameWithoutExtension <span class="token operator">=</span> fileNameWithoutExtension<span class="token punctuation">.</span><span class="token function">ToUpper</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><em>newScriptPath</em> &#x65B0;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84; e.g. Assets/Scripts/ShaderTest.Shader 
+<em>targetPath</em> &#x6A21;&#x677F;&#x6587;&#x4EF6;&#x8DEF;&#x5F84; e.g. Assets/Scripts/Utils/CustomShader.Shader.txt
+<em>fileNameWithoutExtension</em> &#x6587;&#x4EF6;&#x540D; e.g. ShaderTest</p>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">StreamWriter</span> sw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">StreamWriter</span><span class="token punctuation">(</span>fullPath<span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">,</span>System<span class="token punctuation">.</span>Text<span class="token punctuation">.</span>Encoding<span class="token punctuation">.</span>UTF8<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">StreamReader</span> sr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">StreamReader</span><span class="token punctuation">(</span>targetPath<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name"><span class="token keyword">string</span></span> str <span class="token operator">=</span> sr<span class="token punctuation">.</span><span class="token function">ReadToEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        str <span class="token operator">=</span> Regex<span class="token punctuation">.</span><span class="token function">Replace</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span>item<span class="token punctuation">,</span>fileNameWithoutExtension<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sw<span class="token punctuation">.</span><span class="token function">Write</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sw<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sr<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        AssetDatabase<span class="token punctuation">.</span><span class="token function">Refresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        AssetDatabase<span class="token punctuation">.</span><span class="token function">ImportAsset</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> AssetDatabase<span class="token punctuation">.</span><span class="token function">LoadAssetAtPath</span><span class="token punctuation">(</span>newScriptPath<span class="token punctuation">,</span><span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token type-expression class-name">UnityEngine<span class="token punctuation">.</span>Object</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6D41;&#x8BFB;&#x5199;&#xFF0C;&#x5C06;<em>item</em>&#x7684;#xx#&#x66FF;&#x6362;&#x4E3A;<em>fileNameWithoutExtension</em>(&#x6587;&#x4EF6;&#x540D;)
+e.g. </p>
+<pre class="language-"><code class="lang-glsl">Shader <span class="token string">&quot;CustomShader/#CustomShader#&quot;</span>
+<span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53D8;&#x6210;</p>
+<pre class="language-"><code class="lang-glsl">Shader <span class="token string">&quot;CustomShader/ShaderTest&quot;</span>
+<span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Chapter0.2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 0.2 VSCode环境配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"0.3 其他的配置","level":"1.2.3","depth":2,"previous":{"title":"0.2 VSCode环境配置","level":"1.2.2","depth":2,"path":"Chapter0/Chapter0.2.md","ref":"Chapter0/Chapter0.2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","-highlight","prism","prism-themes","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"LuZiShen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"UnitySRP学习笔记","gitbook":"*"},"file":{"path":"Chapter0/Chapter0.3.md","mtime":"2022-08-29T17:03:24.471Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-29T17:25:30.537Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
